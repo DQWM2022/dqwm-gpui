@@ -19,7 +19,8 @@ unwrap_used = "deny"
 
 
 [dependencies]
-gpui-kit = "0.7.0"
+gpui-kit = "0.7.1"
+#gpui-fps = "0.7.1"
 rust-embed = { version = "8.7", features = ["include-exclude"] }
 
 [build-dependencies]

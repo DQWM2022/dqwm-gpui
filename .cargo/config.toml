@@ -1,6 +1,5 @@
-# 强制静态链接 CRT，避免 VCRUNTIME140.dll 等依赖
 [target.x86_64-pc-windows-msvc]
-rustflags = ["-C", "target-feature=+crt-static"]
+linker = "rust-lld.exe"
 
 [alias]
-dabao = "build --release"
+dabao = "build --release --config 'target.x86_64-pc-windows-msvc.rustflags=[\"-C\",\"target-feature=+crt-static\"]'"
